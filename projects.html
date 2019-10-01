@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Gagandeep's Projects</title>
+  </head>
+  <body id="body4">
+    <header>
+      <nav>
+        <div class="navDesign">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="hobbies.html">Hobbies</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="projects.html">Projects</a></li>
+        </div>
+      </nav>
+    </header>
+    <h1 class="headerFont">My Personal Coding Projects</h1>
+    <div class="container">
+      <div class="row">
+        <h3 class="center">Python - Sudoku Game</h3>
+        <img class="roundedEdges" src="images/sudoku.png" alt="Python Sudoku Game" width=100%>
+        <p class="padded">Above is a Sudoku game that I coded using Python. This game implements multiple
+        pre-built grids and generates the white spaces based on the difficulty the user selects. The difficulties are
+        Easy, Medium, and Hard. The harder the difficulty, the more white spaces will be generated. To check the solution
+        when the user presses "Solve", we loop over each space in the solution grid and the user's grid. If all boxes match,
+        we output a victory screen. This code utilizes multiple classes as well as methods to organize the code elegantly.
+        I implemented the GUI using the built-in <span>Pillow</span> library within Python. If you would like to check it
+        out and download the game, the files can be found on my <a href="https://github.com/gagandeepbhangal">Github</a>. Enjoy!</p>
+      </div>
+      <div class="row">
+        <h3 class="center">Java - Paint Game</h3>
+        <img class="roundedEdges" src="images/paint.png" alt="Java Paint Program" width=100%>
+        <p> </p>
+        <p class="padded">This game is a Paint program implemented in Java where the user selects either "Circle, Rectangle, or Squiggle" and
+        can then draw those shapes on the canvas. To remember all shapes drawn, this program utilizes multiple data
+        structures to keep everything organized and code minimized. The data structures used are known as: <span>MVC, Factory, Strategy
+        and Command</span>. These three data structures save all shapes drawn which is useful for the "redo" and "undo" buttons.
+        Also, this program has a save button in it. In order to properly save and load the canvas, the code stores the shapes'
+        attributes in a ".txt" file and then reads this file line by line to recreate the canvas. Each shape has its own class with
+        specific attributes of how the shape looks. When the user draws a shape, it is added to an Arraylist along with all its
+        attributes. Essentially, the main focus of this project was to demonstrate the use of Classes and Data Structures to create
+        a complex program with elegant code.</p>
+      </div>
+      <div class="row">
+        <h3 class="center">C - Prime Number Checker</h3>
+        <img class="roundedEdges" src="images/prime.png" alt="C Terminal" width="100%">
+        <p> </p>
+        <p class="padded">This prime number checker program implemented in C utilizes forking to determine if a number is prime,
+        a product of primes, or not prime at all. The "number of filters" as seen in the picture above is essentially the number
+        of forks called in the program. Each filter removes all multiples of specific factor. The first filter will remove all
+        multiples of "2" if it is a factor. The next filter will remove all multiples of "3" if it is a factor. The third filter will not
+        remove multiples of "4" because "4" would've already been removed since it is a multiple of "2". Thus, each filter starts with
+        the next prime factor. A prime number can be determined much more easily yes, but the point of this project was to do it using
+        the concept of forking. Each time a new filter is created, it is created in a new process (hence, we fork). This allows us to
+        run multiple filters simultaneously and thus giving us a faster run time. Each new process is the child of the previous parent
+        process (the previous filter). If we hit more than 1 factor, we say the number is not a product of primes. If there are no factors,
+        the number is prime, and if there is a factor (other than 1), the number is a product of primes. This program demonstrates my
+        knowledge of forking and shows how I implement it within C.</p>
+      </div>
+    </div>
+    <footer>
+      <div class="containerFoot">
+        <div id="footerL">
+          <h6>Contact Me</h6>
+          <p class="smallText">Email: gagandeep.bhangal@yahoo.ca</p>
+          <p class="smallText">Cell: 647-979-5555</p>
+        </div>
+        <div id="footerR">
+          <h6>Mailing Info</h6>
+          <p class="smallText">Address: 62 Amareto Cres</p>
+          <p class="smallText">Postal Code: L7A 3P4</p>
+          <p class="smallText">City: Brampton, Ontario</p>
+        </div>
+    </footer>
+  </body>
+</html>
